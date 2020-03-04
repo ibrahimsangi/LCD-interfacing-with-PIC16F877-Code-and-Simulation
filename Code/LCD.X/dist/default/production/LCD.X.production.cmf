@@ -1,0 +1,336 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\LCD.X.production.obj
+cinit CODE 0 7FC 7FC 4 2
+text7 CODE 0 753 753 11 2
+text6 CODE 0 72F 72F A 2
+text5 CODE 0 743 743 10 2
+text4 CODE 0 796 796 29 2
+text3 CODE 0 764 764 16 2
+text2 CODE 0 739 739 A 2
+text1 CODE 0 77A 77A 1C 2
+maintext CODE 0 7BF 7BF 3D 2
+cstackCOMMON COMMON 1 70 70 9 1
+strings STRING 0 3 3 28 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0020-006F 1
+BANK1 00A0-00EF 1
+BANK2 0110-016F 1
+BANK3 0190-01EF 1
+CODE 002B-072E 2
+CODE 0800-1FFF 2
+COMMON 0079-007D 1
+CONST 002B-072E 2
+CONST 0800-1FFF 2
+EEDATA 2100-21FF 2
+ENTRY 002B-072E 2
+ENTRY 0800-1FFF 2
+IDLOC 2000-2003 2
+RAM 0020-006F 1
+RAM 00A0-00EF 1
+RAM 0110-016F 1
+RAM 0190-01EF 1
+SFR0 0000-001F 1
+SFR1 0080-009F 1
+SFR2 0100-010F 1
+SFR3 0180-018F 1
+STACK 0110-016F 1
+STRCODE 002B-072E 2
+STRCODE 0800-1FFF 2
+STRING 002B-072E 2
+STRING 0800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\LCD.X.production.obj
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":68 72F text6 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":70 730 text6 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":71 733 text6 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":73 735 text6 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":74 738 text6 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":78 739 text2 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":80 73A text2 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":81 73D text2 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":83 73F text2 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":84 742 text2 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":45 743 text5 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":47 743 text5 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":48 749 text5 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":51 752 text5 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":55 753 text7 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":60 753 text7 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":61 756 text7 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":62 75B text7 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":63 75E text7 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":64 763 text7 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":98 764 text3 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":101 765 text3 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":103 775 text3 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":107 779 text3 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":88 77A text1 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":108 77A text3 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":90 77B text1 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":92 785 text1 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":90 795 text1 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":18 796 text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":22 796 text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":94 796 text1 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":23 799 text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":24 79A text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":28 79B text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":29 79E text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":30 79F text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":32 7A0 text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":36 7A9 text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":37 7AF text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":38 7B5 text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":39 7BB text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\LCD.c":41 7BE text4 CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":29 7BF maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":31 7BF maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":33 7C4 maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":35 7C4 maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":36 7C9 maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":37 7D6 maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":38 7DC maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":39 7E2 maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":40 7E8 maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":41 7EE maintext CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":33 7FB maintext CODE
+"C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.":378 7FC cinit CODE
+"C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.":381 7FC cinit CODE
+"C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.":387 7FC cinit CODE
+"C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.":388 7FC cinit CODE
+"D:\IbrahimLabs\8bit PIC16F series\LCD\Code\LCD.X\main.c":44 7FC maintext CODE
+"C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.":389 7FD cinit CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 79 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Hintentry 0 0 CODE 0 intentry -
+__Lintentry 0 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__size_of_Initilize_LCD 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__end_of_WriteString_LCD F2C 0 CODE 0 text1 dist/default/production\LCD.X.production.obj
+_main F7E 0 CODE 0 maintext dist/default/production\LCD.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+btemp 7E 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ltemp 7E 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ttemp 7E 0 ABS 0 - dist/default/production\LCD.X.production.obj
+wtemp 7E 0 ABS 0 - dist/default/production\LCD.X.production.obj
+start 0 0 CODE 0 init C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+_Initilize_LCD F2C 0 CODE 0 text4 dist/default/production\LCD.X.production.obj
+_TRISB 86 0 ABS 0 - dist/default/production\LCD.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+_PORTB 6 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ltemp0 7E 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ttemp0 7E 0 ABS 0 - dist/default/production\LCD.X.production.obj
+wtemp0 7E 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ltemp1 82 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ttemp1 81 0 ABS 0 - dist/default/production\LCD.X.production.obj
+wtemp1 80 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ltemp2 86 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ttemp2 84 0 ABS 0 - dist/default/production\LCD.X.production.obj
+wtemp2 82 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ltemp3 80 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ttemp3 87 0 ABS 0 - dist/default/production\LCD.X.production.obj
+wtemp3 84 0 ABS 0 - dist/default/production\LCD.X.production.obj
+ttemp4 7F 0 ABS 0 - dist/default/production\LCD.X.production.obj
+wtemp4 86 0 ABS 0 - dist/default/production\LCD.X.production.obj
+wtemp5 88 0 ABS 0 - dist/default/production\LCD.X.production.obj
+wtemp6 7F 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+__end_of_MoveCursorToPosition EF4 0 CODE 0 text3 dist/default/production\LCD.X.production.obj
+__end_of__stringtab 12 0 STRING 0 strings dist/default/production\LCD.X.production.obj
+_MoveCursorToPosition EC8 0 CODE 0 text3 dist/default/production\LCD.X.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__end_of__stringdata 56 0 STRING 0 strings dist/default/production\LCD.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+_WriteString_LCD EF4 0 CODE 0 text1 dist/default/production\LCD.X.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Lcommon 0 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___int_sp 0 0 STACK 2 stack C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+_ClearScreen_LCD E86 0 CODE 0 text5 dist/default/production\LCD.X.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Labs1 0 0 ABS 0 abs1 -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__end_of_Initilize_LCD F7E 0 CODE 0 text4 dist/default/production\LCD.X.production.obj
+WriteString_LCD@String 73 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.obj
+__Hcode 0 0 ABS 0 code -
+__Lcode 0 0 ABS 0 code -
+stackhi 0 0 ABS 0 - C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+stacklo 0 0 ABS 0 - C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+__Hinit 0 0 CODE 0 init -
+__Linit 0 0 CODE 0 init -
+__end_of_main FF8 0 CODE 0 maintext dist/default/production\LCD.X.production.obj
+__Htext 0 0 ABS 0 text -
+__Ltext 0 0 ABS 0 text -
+__end_of_Toggle_Enable_Pin_LCD EC8 0 CODE 0 text7 dist/default/production\LCD.X.production.obj
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\LCD.X.production.obj
+__stringtab 6 0 STRING 0 strings dist/default/production\LCD.X.production.obj
+_TRISCbits 87 0 ABS 0 - dist/default/production\LCD.X.production.obj
+_PORTCbits 7 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__Hstrings 0 0 ABS 0 strings -
+__Lstrings 0 0 ABS 0 strings -
+__pstrings 6 0 STRING 0 strings dist/default/production\LCD.X.production.obj
+MoveCursorToPosition@Address 72 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.obj
+__size_of_MoveCursorToPosition 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__end_of_WriteCmd_LCD E72 0 CODE 0 text6 dist/default/production\LCD.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Lbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Lbank3 0 0 ABS 0 bank3 -
+___latbits 2 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext1 EF4 0 CODE 0 text1 dist/default/production\LCD.X.production.obj
+__ptext2 E72 0 CODE 0 text2 dist/default/production\LCD.X.production.obj
+__ptext3 EC8 0 CODE 0 text3 dist/default/production\LCD.X.production.obj
+_WriteCmd_LCD E5E 0 CODE 0 text6 dist/default/production\LCD.X.production.obj
+__ptext4 F2C 0 CODE 0 text4 dist/default/production\LCD.X.production.obj
+__ptext5 E86 0 CODE 0 text5 dist/default/production\LCD.X.production.obj
+__end_of_ClearScreen_LCD EA6 0 CODE 0 text5 dist/default/production\LCD.X.production.obj
+__ptext6 E5E 0 CODE 0 text6 dist/default/production\LCD.X.production.obj
+__ptext7 EA6 0 CODE 0 text7 dist/default/production\LCD.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__Lclrtext 0 0 ABS 0 clrtext -
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\LCD.X.production.obj
+__size_of_WriteString_LCD 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__end_of_WriteData_LCD E86 0 CODE 0 text2 dist/default/production\LCD.X.production.obj
+WriteCmd_LCD@Cmd 71 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__Hcinit 1000 0 CODE 0 cinit -
+__Lcinit FF8 0 CODE 0 cinit -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+WriteData_LCD@Data 71 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.obj
+__size_of_WriteData_LCD 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__size_of_ClearScreen_LCD 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__Hend_init 6 0 CODE 0 end_init -
+__Lend_init 0 0 CODE 0 end_init -
+__Hreset_vec 0 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__stringdata 12 0 STRING 0 strings dist/default/production\LCD.X.production.obj
+__size_of_WriteCmd_LCD 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+intlevel2 0 0 CODE 0 functab C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+intlevel3 0 0 CODE 0 functab C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+intlevel4 0 0 CODE 0 functab C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+_Toggle_Enable_Pin_LCD EA6 0 CODE 0 text7 dist/default/production\LCD.X.production.obj
+intlevel5 0 0 CODE 0 functab C:\Users\IBRAHI~1\AppData\Local\Temp\s48g.obj
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\LCD.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+start_initialization FF8 0 CODE 0 cinit dist/default/production\LCD.X.production.obj
+__size_of_Toggle_Enable_Pin_LCD 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Lmaintext 0 0 ABS 0 maintext -
+__pmaintext F7E 0 CODE 0 maintext dist/default/production\LCD.X.production.obj
+_WriteData_LCD E72 0 CODE 0 text2 dist/default/production\LCD.X.production.obj
+__initialization FF8 0 CODE 0 cinit dist/default/production\LCD.X.production.obj
+__stringbase 10 0 STRING 0 strings dist/default/production\LCD.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\LCD.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 3 2
+cinit 0 7FC FF8 4 2
+config 0 2007 400E 1 2
+cstackCOMMON 1 70 70 9 1
+maintext 0 7BF F7E 3D 2
+text4 0 796 F2C 29 2
+strings 0 3 6 28 2
+text1 0 77A EF4 1C 2
+text3 0 764 EC8 16 2
+text7 0 753 EA6 11 2
+text5 0 743 E86 10 2
+text2 0 739 E72 A 2
+text6 0 72F E5E A 2
